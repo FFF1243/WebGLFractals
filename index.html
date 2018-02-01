@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>WebGL</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body onload="runWebGL()">
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="sierp.html">Fraktal 2D</a>
+                <a href="sierp3d.html">Fraktal 3D</a>
+                <a href="index.html">Ostroslup</a>
+         </div>
+    <div class = "row" id ="first">
+        <div class="col-md-2">
+            <div class="checkbox">
+              <label><input type="checkbox" checked="checked" id="rotateX"> Rotacja X</label>
+            </div>
+            <div class="checkbox">
+                    <label><input type="checkbox" checked="checked" id="rotateY"> Rotacja Y</label>
+             </div>
+             <div class="checkbox">
+                    <label><input type="checkbox" id="rotateZ"> Rotacja Z</label>
+             </div> 
+             <div class="btn-group">
+                <button id="OnButton" onclick="runWebGL()">Uruchom</button><br>
+                <button id="menuButton" onclick="openNav()">Menu</button><br>
+            </div>
+
+            </div>
+        <canvas class = "col-md-10" id="glcanvas" width="800" height="600">
+            Brak wsparcia dla elementu HTML5 typu canvas 
+        </canvas>
+        <br>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/main_first.js"></script>
+   <script src="js/matrix.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
